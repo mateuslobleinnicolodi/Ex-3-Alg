@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	     <meta charset="UTF-8">
+	     <title>Formulário KGB</title>
+	</head>
+
+	<body>
+	    <form action="processa.php" name="formulario" method="get">
+		Nome:		<input name="nome" type="text"><br>
+		Sexo: 		<input type="radio" name="sexo" value="masculino">Masculino 
+				<input type="radio" name="sexo" value="feminino">Feminino<br>
+		Cor dos olhos:	<select name="cor">
+			<option value="Azul">Azul</option>
+			<option value="Preto">Preto</option>
+			<option value="Verde">Verde</option>
+			<option value="Castanho">Castanho</option>
+			<option value="Cinza">Cinza</option>
+		</select><br>
+		Selecione os que se aplicam a você: 
+							<input type="checkbox" name="gigante[]" value="gigante">Mais de 2 metros
+						  	<input type="checkbox" name="peso[]" value="peso">Mais de 100 Quilos<br>
+		Descreva seu estado físico:		<textarea name="textdef" id="textdef"></textarea><br>
+		<input name="btnEnviar" type="submit" value="Enviar">
+	    </form>
+	</body>
+</html>
+
